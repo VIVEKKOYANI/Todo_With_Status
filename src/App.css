@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.addTask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addTask button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addTask .filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.addTask .filter select {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  overflow: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between; /* Title on the left, close button on the right */
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.modal-header h2 {
+  margin: 0; /* Ensure title has no default margin */
+}
+
+.modal-btn{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px;
+}
+
+.modal-btn button {
+  padding: 8px 12px;
+  /* background-color: #007bff; */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-btn-save{
+  background-color: #007bff;
+  margin-right: 10px;
+}
+
+.modal-btn-cancel{
+  background-color: #808080
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.editBtn{
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error{
+  color: red;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.pagination {
+  padding: 10px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination > span{
+  padding: 15px 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.pagination__disable{
+  opacity: 0;
+}
+
+.pagination__selected{
+  background-color: rgb(220, 220, 220);
+}
